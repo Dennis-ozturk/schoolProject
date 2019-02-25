@@ -20,10 +20,11 @@
             <!-- MOBILE/WEB NAVIGATION -->
             <ul class="menu">  
                 <li><a href="index.php">Vehicles</a></li>
-                <li><a href="category">about us</a></li>
+                <li><a href="category">About us</a></li>
                 <li><a href="#">Contact us</a></li>
                 <li><a href="#">My profile</a></li>
                 <li><a href="#">Cart</a></li>
+                <li><a href="#">Not registerd yet?<br> Register now!</a></li>
             </ul>
         </nav>
     </header>
