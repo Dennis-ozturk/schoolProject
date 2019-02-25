@@ -1,12 +1,14 @@
 <?php
 require_once('../includes/header.php');
+
+
 ?>
 
 
 <section>
     <section>
         <h2><?php ?></h2>
-        <img src="<?php ?>" alt="">
+        <img src="<?php ?>" alt="product-<?php ?>">
         <section>
         <h4>Description</h4>
         <p><?php ?></p>
