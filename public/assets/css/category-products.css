@@ -1,0 +1,37 @@
+.product-card{
+    color: black;
+    border: 1px solid black;
+    width: 25%;
+    display: block;
+    transition: transform 200ms ease-in;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+
+.product-card:hover{
+    transform: scale(1.02);
+}
+
+.product-card section img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.product-card section section{
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+.card-readmore{
+    color: blue;
+    text-decoration: underline;
+}
+
+
+.category-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-flow: row;
+    flex-wrap: wrap;
+}

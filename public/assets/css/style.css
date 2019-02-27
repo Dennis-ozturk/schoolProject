@@ -8,8 +8,6 @@ a{
 
 header{
     width: 100%;
-    height: 70px;
-    /* position: absolute; */
     border-bottom: 1px solid #EAEAEB;
     background-color: #fff;
 }
@@ -66,6 +64,110 @@ header nav #toggle{
 header nav label{
     cursor: pointer;
 }
+
+/* Category products CSS */
+
+.category-container{
+    width: 90%;
+    padding: 2%;
+    border:1px solid gray;
+    margin: 50px auto 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.product-card{
+    color: black;
+    border: 1px solid black;
+    width: 25%;
+    display: block;
+    transition: transform 200ms ease-in;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+
+.product-card:hover{
+    transform: scale(1.02);
+}
+
+.product-card section img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.product-card section section{
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+.card-readmore{
+    color: blue;
+    text-decoration: underline;
+}
+
+
+/* Product CSS */
+
+.product-container{
+    width: 90%;
+    padding: 2%;
+    border:1px solid gray;
+    margin: 50px auto 0 auto;
+}
+
+.back-page{
+    display: inline-flex;
+    padding-bottom: 10px;
+}
+
+.back-page:before{
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-image: url('../images/icons/arrow-back.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    display: inline-block;
+    padding-right:10px; 
+}
+
+.vertical-hr{
+    width: 1px;
+    background-color: gray;
+}
+
+.product{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.product > section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 1%;
+    width: 600px;
+    height: 500px;
+}
+.product > section section:nth-child(1){
+    display: flex;
+    flex-direction: column;
+}
+.product > section section:nth-child(1) p{
+    margin: 0;
+}
+.product > section section:nth-child(3){
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
 
 
 @media only screen and (min-width: 700px){
