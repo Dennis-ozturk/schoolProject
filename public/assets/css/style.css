@@ -107,8 +107,12 @@ header nav label{
     color: blue;
     text-decoration: underline;
 }
-
-
+.shortDescription{
+    width: 30ch;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 /* Product CSS */
 
 .product-container{

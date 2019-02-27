@@ -18,15 +18,17 @@ $stmt = $conn->query("SELECT * FROM products");
             <img src="<?php ?>https://picsum.photos/300/300" alt="product-<?php echo $row['productCode'];?>">
             <section>
                 <h2><?php echo $row['productName'];?></h2> <!-- Product name -->
-                <p><?php echo $row['productDescription'];?></p> <!-- Small description -->
+                <p class="shortDescription"><?php echo $row['productDescription'];?></p> <!-- Small description -->
                 <p>Price: $<?php echo $row['buyPrice'];?></p>
                 <p class="card-readmore">Read more</p>
             </section>
         </section>
     </a>
     <?php 
-    $_SESSION['productName'] = $_GET['productName'];
     }
+    $page = $_SERVER["REQUEST_URI"];
+    $_SESSION['page'] = $page;
+
     ?>
 </Main>
 
