@@ -1,12 +1,12 @@
 <?php 
-$host = 'localhost';
+$hosten = 'localhost';
 $user = 'root';
 $password = 'root';
 $dbname = 'classicmodels';
 $charset = 'utf8';
 
 // SET DSN ( Data Source Name )
-$dsn = 'mysql:host='. $host . ';dbname=' . $dbname . ';charset=' . $charset;
+$dsn = 'mysql:host='. $hosten . ';dbname=' . $dbname . ';charset=' . $charset;
 
 // Create a PDO instance
 try {
