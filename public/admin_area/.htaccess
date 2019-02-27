@@ -1,7 +1,0 @@
-RewriteEngine On
-
-# Rewrite for category.php to category
-RewriteRule ^category category.php [NC,L]
-
-# So it looks like this category/productName 
-# RewriteRule ^category/([0-9a-zA-Z]+) category.php?x=$1 [NC, L]
