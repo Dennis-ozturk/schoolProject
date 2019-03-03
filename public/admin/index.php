@@ -29,7 +29,8 @@
 
 
 
-    <?php
+    <!-- <?php
+    
         if(isset($_POST['sub'])){
             $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
             $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
@@ -47,7 +48,7 @@
             echo("<br> Please try again");
        
         }
-    ?>
+    ?> -->
 
 
 

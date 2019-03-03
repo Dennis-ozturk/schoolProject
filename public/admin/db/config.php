@@ -1,20 +1,28 @@
 <?php 
-$host = 'localhost';
-$user = 'root';
-$password = '';
-$dbname = 'classicmodels';
-$charset = 'utf8';
+class Dbh {
+    private $servername;
+    private $username;
+    private $password;
+    private $dbname;
+    private $charset;
 
-// SET DSN ( Data Source Name )
-$dsn = 'mysql:host='. $host . ';dbname=' . $dbname . ';charset=' . $charset;
+    public function connect(){
+        $this->servername = "localhost";
+        $this->username = "root";
+        $this->password = "";
+        $this->dbname = "classicmodels";
+        $this->charset = "utf8";
 
-// Create a PDO instance
-try {
-    $conn = new PDO($dsn, $user, $password);
-} catch (\PDOException $e) {
-    throw new \PDOException($e->getMessage(), (int)$e->getCode());
+        try {
+            $dsn = 'mysql:host='. $this->servername . ';dbname=' . $this->dbname . ';charset=' . $this->charset;
+            $conn = new PDO($dsn, $this->username, $this->password);
+            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            return $conn;
+        } catch (\PDOException $e) {
+            echo("Connection failed: ". $e->getMessage());
+        }
+    }
 }
 
-// Förhindrar PDO att använda stimulerade förfrågningar
-$conn->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
-
+$object = new Dbh();
+$object->connect();

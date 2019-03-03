@@ -16,7 +16,6 @@
                 <textarea name="quantityInStock" rows="2" cols="10"><?php echo($row['quantityInStock']); ?></textarea> 
                 <textarea name="buyPrice" rows="2" cols="10"><?php echo($row['buyPrice']); ?></textarea>  
                 <textarea name="MSRP" rows="2" cols="10"><?php echo($row['MSRP']); ?></textarea> 
-
                 <input type="submit" name="action">
             </form>
         <br>
